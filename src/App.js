@@ -12,7 +12,7 @@ export default function App() {
   const [newTask, setNewTask] = useState("");
 
   const handleSubmit = (e) => {
-    // e.prevenDefault();
+    e.preventDefault();
     if (newTask) {
       const task = {
         id: Date.now(),
