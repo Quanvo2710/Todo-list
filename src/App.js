@@ -5,11 +5,11 @@ import Header from "./components/Header";
 import TaskList from "./components/TaskList";
 export default function App() {
   const [tasks, setTasks] = useState([
-    { id: "task_1", title: "LearnJS fundam", status: 0 },
+    { id: "task_1", title: "LearnJS", status: 0 },
     { id: "task_2", title: "Code a Todo List lv2", status: 0 },
   ]);
   const [showInComplete, setShowInComplete] = useState(false);
-  const [newTask, setNewTask] = useState("123 ");
+  const [newTask, setNewTask] = useState("");
 
   const handleSubmit = (e) => {
     // e.prevenDefault();
